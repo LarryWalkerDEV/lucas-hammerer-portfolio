@@ -120,7 +120,7 @@ export const translations = {
     // Version Selector
     versionSelector: {
       heading: 'Choose Your Experience',
-      subtitle: 'Four unique perspectives on the same journey',
+      subtitle: 'Seven unique perspectives on the same journey',
       explorer: {
         title: 'The Explorer',
         description: 'Warm & Earthy aesthetic with organic textures',
@@ -136,6 +136,18 @@ export const translations = {
       facilitator: {
         title: 'The Facilitator',
         description: 'Organic & Flowing with calming animations',
+      },
+      minimalist: {
+        title: 'The Minimalist',
+        description: 'Clean & Elegant with lots of whitespace',
+      },
+      creative: {
+        title: 'Creative Agency',
+        description: 'Bold & Dramatic with animated folders',
+      },
+      professional: {
+        title: 'Modern Professional',
+        description: 'Corporate & Refined with gold accents',
       },
     },
   },
@@ -258,7 +270,7 @@ export const translations = {
     // Version Selector
     versionSelector: {
       heading: 'Wähle Dein Erlebnis',
-      subtitle: 'Vier einzigartige Perspektiven auf dieselbe Reise',
+      subtitle: 'Sieben einzigartige Perspektiven auf dieselbe Reise',
       explorer: {
         title: 'Der Explorer',
         description: 'Warme & erdige Ästhetik mit organischen Texturen',
@@ -274,6 +286,18 @@ export const translations = {
       facilitator: {
         title: 'Der Facilitator',
         description: 'Organisch & fließend mit beruhigenden Animationen',
+      },
+      minimalist: {
+        title: 'Der Minimalist',
+        description: 'Sauber & elegant mit viel Weißraum',
+      },
+      creative: {
+        title: 'Kreativagentur',
+        description: 'Mutig & dramatisch mit animierten Ordnern',
+      },
+      professional: {
+        title: 'Modern Professionell',
+        description: 'Geschäftlich & raffiniert mit goldenen Akzenten',
       },
     },
   },

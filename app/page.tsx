@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight, Mountain, Beaker, Camera, Wind } from 'lucide-react'
+import { ArrowRight, Mountain, Beaker, Camera, Wind, Minimize2, Palette, Briefcase } from 'lucide-react'
 import { LanguageSwitcher, useLanguage } from '@/components/shared/LanguageSwitcher'
 import { translations } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
@@ -48,6 +48,36 @@ const versions = [
     textColor: 'text-[#264653]',
     accentColor: 'text-[#2C5F6E]',
     labelKey: 'facilitator' as const,
+  },
+  {
+    id: 'v5',
+    href: '/v5',
+    icon: Minimize2,
+    gradient: 'from-[#1A1A1A] to-[#6B6B6B]',
+    bgGradient: 'bg-gradient-to-br from-[#FAFAF8] to-[#E8E8E8]',
+    textColor: 'text-[#1A1A1A]',
+    accentColor: 'text-[#2D2D2D]',
+    labelKey: 'minimalist' as const,
+  },
+  {
+    id: 'v6',
+    href: '/v6',
+    icon: Palette,
+    gradient: 'from-[#f59e0b] to-[#ef4444]',
+    bgGradient: 'bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a]',
+    textColor: 'text-[#F5F5F5]',
+    accentColor: 'text-[#f59e0b]',
+    labelKey: 'creative' as const,
+  },
+  {
+    id: 'v7',
+    href: '/v7',
+    icon: Briefcase,
+    gradient: 'from-[#1a1a2e] to-[#d4af37]',
+    bgGradient: 'bg-gradient-to-br from-[#1a1a2e] to-[#0f0f1a]',
+    textColor: 'text-white',
+    accentColor: 'text-[#d4af37]',
+    labelKey: 'professional' as const,
   },
 ]
 
@@ -100,7 +130,7 @@ export default function HomePage() {
           </motion.div>
 
           {/* Version Cards */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {versions.map((version, index) => {
               const Icon = version.icon
               const versionT = t.versionSelector[version.labelKey]
